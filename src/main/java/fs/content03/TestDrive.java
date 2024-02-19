@@ -30,6 +30,5 @@ public class TestDrive {
 		for (Book kitap : bookList) {
 			System.out.println(kitap.toString());
 		}
-
 	}
 }

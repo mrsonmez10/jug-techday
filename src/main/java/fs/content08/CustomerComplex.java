@@ -6,5 +6,4 @@ public class CustomerComplex {
 	/*
 		Tons of Code
 	 */
-
 }

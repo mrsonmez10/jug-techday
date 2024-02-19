@@ -6,7 +6,6 @@ package fs.content08;
 public class Rectangle {
 	private double length;
 	private double width;
-
 	/**
 	 * Constructor for the Rectangle class.
 	 * @param length The length of the rectangle
