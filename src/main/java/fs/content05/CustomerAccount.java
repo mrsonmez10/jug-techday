@@ -16,5 +16,4 @@ public class CustomerAccount {
 	private String securityNumber;
 	private LocalDateTime activateDate;
 	private String securityNumberVersion;
-
 }

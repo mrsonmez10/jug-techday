@@ -10,8 +10,7 @@ import java.io.OutputStream;
 
 public class TryWithResource {
 
-	public String firstLineOfFile(String path, String defaultVal) throws IOException
-	{
+	public String firstLineOfFile(String path, String defaultVal) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader(path));
 		try {
 			return br.readLine();
@@ -24,8 +23,7 @@ public class TryWithResource {
 		}
 	}
 
-	public String firstLineOfFileWell(String path, String defaultVal)
-	{
+	public String firstLineOfFileWell(String path, String defaultVal) {
 		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 			return br.readLine();
 		}
@@ -35,8 +33,7 @@ public class TryWithResource {
 	}
 
 	// Multiple usage
-	public void copy(String src, String dst) throws IOException
-	{
+	public void copy(String src, String dst) throws IOException {
 		try (InputStream in = new FileInputStream(src);
 				OutputStream out = new FileOutputStream(dst)) {
 			byte[] buf = new byte[0];
@@ -47,8 +44,7 @@ public class TryWithResource {
 	}
 
 	// Attention
-	public void copy2(String src, String dst) throws IOException
-	{
+	public void copy2(String src, String dst) throws IOException {
 		try (InputStream in = new FileInputStream(src);
 				OutputStream out = new FileOutputStream(dst)) {
 			byte[] buf = new byte[0];

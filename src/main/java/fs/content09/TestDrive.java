@@ -10,7 +10,6 @@ import java.util.Set;
 public class TestDrive {
 
 	public static void main(String[] args) {
-
 		LinkedHashSet<String> stringSet = new LinkedHashSet();
 		Set<String> stringSet2 = new LinkedHashSet();
 		stringSet2 = new HashSet<>();

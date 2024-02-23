@@ -16,12 +16,12 @@ public class TestDrive {
 		bookList.add(new Book("Anna Kar", 150));
 
 		Collections.sort(bookList);
-
 		System.out.println("Sıralama1");
 		for (Book kitap : bookList) {
 			System.out.println(kitap.toString());
 		}
 
+		/*
 		// Sıralama 2
 		System.out.println("Sıralama2");
 		BookNameComparator nameComparator = new BookNameComparator();
@@ -30,5 +30,6 @@ public class TestDrive {
 		for (Book kitap : bookList) {
 			System.out.println(kitap.toString());
 		}
+		*/
 	}
 }
