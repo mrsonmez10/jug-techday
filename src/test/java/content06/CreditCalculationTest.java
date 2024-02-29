@@ -10,7 +10,7 @@ class CreditCalculationTest {
 	CreditCalculation creditCalculation = new CreditCalculation();
 
 	@Test
-	void should_work_when_inputs_are_correct() {
+	void should_work_when_inputs_are_greater_than_zero() {
 		assertTrue(creditCalculation.creditCalculator(10000, 3) > 0);
 	}
 
